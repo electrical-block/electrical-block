@@ -1,4 +1,4 @@
-var NS_data = { NS_flag: 0, x: 0, y: 0 };//磁力相關參數
+var NS_data = { NS_flag: 0, x: 0, y: "" };//磁力相關參數
 var length = 12;//磁力範圍
 svg.addEventListener("mousemove", NS_move, false)
 function NS_move(e) {
