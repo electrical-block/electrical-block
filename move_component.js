@@ -4,7 +4,6 @@ document.addEventListener("mouseup", document_up, false)
 var component = svg.getElementById('');
 class_sys()
 function component_move(e) {
-    console.log(svg.id);
     if (move_component_data.flag == 1) {//物件移動
         //////////////////////////////////////////////////////////////////////////////
         var a = cli2svg(e)//取得滑鼠SVG_XY

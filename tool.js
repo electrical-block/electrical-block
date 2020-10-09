@@ -1,3 +1,6 @@
+function str(i){
+  return String(i);
+}
 function _uuid() { //UUID製造函數
   var d = Date.now();
   if (typeof performance !== 'undefined' && typeof performance.now === 'function') {
