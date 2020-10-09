@@ -19,7 +19,7 @@ function pin_sys_fun(e) {//給pin_sys()引用
         line_json.y1 = j.y//記憶第1個點XY
         var a = cli2svg(e)//取得滑鼠SVG_XY
         line_json.x2 = a.x//記憶第2個點XY
-        line_json.y2 = a.y/記憶第2個點XY
+        line_json.y2 = a.y//記憶第2個點XY
         line_json.id = _uuid();
         add_line_data.add_line_element = add_component("line", line_json, line_main);//建立新物件 儲存物件
     } else {

@@ -9,7 +9,6 @@ document.addEventListener("mouseup", document_up, false)
 ///////////////////////////函數///////////////////////////////////
 function mouse_wheel(e) {//縮放函式
     view = svg.getAttribute('viewBox').split(" ")
-    console.log(e.deltaY)//878787
     if (e.deltaY<0) {//放大
         view[0] = String(int(view[0]) - (int(view[2]) * 0.05))
         view[1] = String(int(view[1]) - (int(view[3]) * 0.05))
