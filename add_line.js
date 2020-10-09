@@ -20,7 +20,7 @@ function pin_sys_fun(e) {//給pin_sys()引用
         var a = cli2svg(e)//取得滑鼠SVG_XY
         line_json.x2 = a.x//記憶第2個點XY
         line_json.y2 = a.y//記憶第2個點XY
-        add_line_data.add_line_element = add_safe("line", line_json, line_main);//建立新物件 儲存物件
+        add_line_data.add_line_element = add_component("line", line_json, line_main);//建立新物件 儲存物件
     } else {
         var j = get_pin_xy(element);//取得pin_XY參數
         const el = add_line_data.add_line_element;
