@@ -1,0 +1,22 @@
+<link rel="stylesheet" type="text/css" href="this_page.css" /> ///匯入CSS
+///////////////////////////////////////////純文字////////////////////////////////////////
+物件
+color: red;			顏色
+width: 500px;			外框寬度 PS與字框寬一樣
+height: 500px;          外框高度
+border: 1px solid black;	邊界
+font-size: 40px;            字體大小
+text-align: center;         相較邊框定位(置中\偏左偏右)PS側向
+line-height: 1000px;        字框高
+
+PS:分成兩個框最外面的與文字的
+    外面的可以用以下語法操作
+    width: 500px;			外框寬度 PS與字框寬一樣
+    height: 500px;          外框高度
+    border: 1px solid black;	邊界
+    字框
+    color: red;			        顏色
+    font-size: 40px;            字體大小
+    text-align: center;         相較邊框定位(置中\偏左偏右)PS側向
+    line-height: 1000px;        字框高
+///////////////////////////////////////////BOX////////////////////////////////////////
