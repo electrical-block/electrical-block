@@ -3,7 +3,6 @@ var length = 12;//磁力範圍
 svg.addEventListener("mousemove", NS_move, false)
 function NS_move(e) {
     if (move_component_data.flag == 1/**確認有再移動物件 */) {//物件pin磁力
-
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////
         var a = cli2svg(e)//取得滑鼠SVG_XY
         var main_element_all = document.getElementById(move_component_data.id).getElementsByClassName('pin')//將主物件pin陣列儲存

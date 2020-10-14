@@ -1,7 +1,7 @@
 var move_component_data = { flag: 0, x: 0, y: 0, id: 0 };//move_component相關參數
+var component = svg.getElementById('');
 svg.addEventListener("mousemove", component_move, false)
 document.addEventListener("mouseup", document_up, false)
-var component = svg.getElementById('');
 class_sys()
 function component_move(e) {
     if (move_component_data.flag == 1) {//物件移動
@@ -18,7 +18,7 @@ function class_sys() {//設定class事件(ps:會重複觸發)
     Array.from(document.getElementsByClassName('component_text')).forEach(element => {//刷Class物件
         element.addEventListener("mousedown", function (e) {
             move_component_data.flag = 1;//移動物件旗標
-            e.stopPropagation();//阻止冒泡
+            //e.stopPropagation();//阻止冒泡
             var a = cli2svg(e)//取得滑鼠SVG_XY
             var k = get_transfrom(element)//取得transfrom
             move_component_data.x = a.x - k.x//回推X
@@ -26,6 +26,18 @@ function class_sys() {//設定class事件(ps:會重複觸發)
             component = svg.getElementById(element.id)//回傳物件ID
             move_component_data.id = element.id//紀錄id名
         });
+    });
+}
+function class_set_up(element){
+    element.addEventListener("mousedown", function (e) {
+        move_component_data.flag = 1;//移動物件旗標
+        //e.stopPropagation();//阻止冒泡
+        var a = cli2svg(e)//取得滑鼠SVG_XY
+        var k = get_transfrom(element)//取得transfrom
+        move_component_data.x = a.x - k.x//回推X
+        move_component_data.y = a.y - k.y//回推Y
+        component = svg.getElementById(element.id)//回傳物件ID
+        move_component_data.id = element.id//紀錄id名
     });
 }
 
